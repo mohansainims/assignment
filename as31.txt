@@ -111,3 +111,26 @@ int main()
     else
     printf("consolant");
 }
+
+
+-----------------------------
+
+check the character where from
+
+#include<stdio.h>
+int main()
+{
+    char ch;
+    printf("enter the any character---");
+    scanf("%c",&ch);
+    if(ch=='q'||ch=='w'||ch=='e'||ch=='r'||ch=='t'||ch=='y'||ch=='u'||ch=='i'||ch=='o'||ch=='p')
+    printf("enter the character is from the upper line------- %c",ch);
+    else if(ch=='a'||ch=='s'||ch=='d'||ch=='f'||ch=='g'||ch=='h'||ch=='j'||ch=='k'||ch=='l')
+    printf("enter the character is from the middle line-------%c",ch);
+    else if(ch=='z'||ch=='x'||ch=='c'||ch=='v'||ch=='b'||ch=='n'||ch=='m')
+    printf("enter the character is from the lower line----------%c",ch);
+    else
+    printf("enter the other value like --------%c",ch);
+    return 0;
+
+}
