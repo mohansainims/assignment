@@ -284,3 +284,80 @@ int main()
     
 }
 
+
+=============================
+
+//percentage is greter than the student is pass otherwise Fail
+
+
+   #include<stdio.h> 
+   int main()
+   {
+    int m1,m2,m3,m4,m5;
+    float add,per;
+    printf("enter the hindi masks  ");
+    scanf("%d",&m1);
+    printf("enter the english masks  ");
+    scanf("%d",&m2);
+    printf("enter the maths masks  ");
+    scanf("%d",&m3);
+    printf("enter the science masks  ");
+    scanf("%d",&m4);
+    printf("enter the history masks  ");
+    scanf("%d",&m5);
+    if(m1>=32  &&  m2>=32  &&  m3>=32  &&  m4>=32  &&  m5>=32)
+    {
+    add=m1+m2+m3+m4+m5;
+    printf("\n obtain masks are   %f",add);
+    per=(add*100)/500;
+    
+    printf("\n the percentage is  %f",per);
+    if(per>=60)
+    printf("\n pass");
+    else
+    printf("\n Fail");
+    }
+    
+    else
+    printf("sorry, masks are less than 32 ");
+    
+}
+
+
+//==============================================
+//percentage with Grade
+
+
+#include<stdio.h>
+int main()
+{
+    float m1,m2,m3,m4,m5;
+    float add,per;
+    printf("enter the first subject masks  ");
+    scanf("%f",&m1);
+     printf("enter the second  subject masks  ");
+    scanf("%f",&m2);
+     printf("enter the third subject masks  ");
+    scanf("%f",&m3);
+     printf("enter the fourth subject masks  ");
+    scanf("%f",&m4);
+     printf("enter the five subject masks  ");
+    scanf("%f",&m5);
+    add=m1+m2+m3+m4+m5;
+    per=add*100/500;
+    printf("\npercentage is ==%f",per);
+    if(per<25)
+    printf("\nFail");
+    else if(per>25&&per<=45)
+    printf("\nGrade is E");
+    else if(per>45&&per<=50)
+    printf("\nGrade is D");
+    else if(per>50&&per<=60)
+    printf("\nGrade is C");
+    else if(per>60&&per<=80)
+    printf("\nGrade is B");
+    else if(per>80)
+    printf("\nGrade is A");
+    else
+    printf("\ninvalid");
+}
