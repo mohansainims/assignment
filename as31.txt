@@ -252,5 +252,35 @@ int main()
         }
         
     }
+
+
+//----------------------------------------------
+    
+    // calculate percentage
+    
+    
+    int m1,m2,m3,m4,m5;
+    float add,per;
+    printf("enter the hindi masks  ");
+    scanf("%d",&m1);
+    printf("enter the english masks  ");
+    scanf("%d",&m2);
+    printf("enter the maths masks  ");
+    scanf("%d",&m3);
+    printf("enter the science masks  ");
+    scanf("%d",&m4);
+    printf("enter the history masks  ");
+    scanf("%d",&m5);
+    if(m1>=32  &&  m2>=32  &&  m3>=32  &&  m4>=32  &&  m5>=32)
+    {
+    add=m1+m2+m3+m4+m5;
+    printf("\n obtain masks are   %f",add);
+    per=(add*100)/500;
+    
+    printf("\nthe percentage is  %f",per);
+    }
+    else
+    printf("sorry, masks are less than 32 ");
+    
 }
 
