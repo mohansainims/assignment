@@ -287,7 +287,7 @@ int main()
 
 =============================
 
-//percentage is greter than the student is pass otherwise Fail
+//percentage is greter than 60 the student is pass otherwise Fail
 
 
    #include<stdio.h> 
