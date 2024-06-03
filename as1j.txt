@@ -282,3 +282,46 @@ int main()
 }
 
 
+
+Q:-//enter the user s and swepping the number with the third variable for 'w' and without third variable 'o'
+
+
+#include<stdio.h>
+int main()
+{
+    char c;
+    printf("enter a character for swepping 's'");
+    scanf(" %c",&c);
+    if(c=='s')
+    {   char ch;
+        printf("enter the character for swep 'w'for with the third variable and 'o' for without variable");
+        scanf(" %c",&ch);
+        if(ch=='w')
+        {
+            int n1,n2,n3;
+            printf("enter the two number for swep");
+            scanf("%d%d",&n1,&n2);
+            printf("\n befor the swep the numbers are %d   %d ",n1,n2);
+            n3=n1+n2;
+            n1=n3-n1;
+            n2=n3-n1;
+            printf("\n after the swepping the numbers are  %d %d",n1,n2);
+        }
+        if(ch=='o')
+        {
+            int n1,n2;
+            printf("enter the two numbers ");
+            scanf("%d%d",&n1,&n2);
+            printf("\n before the numbers are %d   %d ",n1,n2);
+            n1=n1+n2;
+            n2=n1-n2;
+            n1=n1-n2;
+            printf("\n after the swepping the numbers are %d   %d",n1,n2);
+        }
+    }
+    else
+    printf("invalid input");
+    return 0;
+}
+
+
