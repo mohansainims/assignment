@@ -1,0 +1,63 @@
+Q:-write a c program for the area and volume for triangle 
+,square and rectangle.
+
+
+#include<stdio.h>
+int main()
+{
+    int area,vol;
+    char ch;
+    printf("enter the character for the area is 'a'and volume for 'v'");
+    scanf("%c",&ch);
+    
+    if(ch=='a'||ch=='A')
+    {   char chh;
+        printf("enter the character for area triangle for t\n , square for s \n rectangle for r");
+        scanf(" %c",&chh);
+        if(chh=='t')
+        { int l,b;
+        printf("enter the length and width for triangle ");
+        scanf("%d %d",&l,&b);
+        printf("the area of triangle  %d",(b*l)/2);
+        }
+        if(chh=='s')
+        { int l;
+         printf("enter the lenght for square:  ");
+         scanf("%d",&l);
+         printf("\nthe area of square %d",l*l);
+        }
+        if(chh=='r')
+        {   int l,b;
+            printf("enter the length and widht for rentangle  ");
+            scanf("%d %d",&l,&b);
+            printf("the area of rentangle %d ",l*b);
+        }
+    }
+    else if(ch=='v'||ch=='V')
+    {
+        char chh;
+        printf("enter the character for volume triangle for t\n , square for s \n rectangle for r");
+        scanf(" %c",&chh);
+        if(chh=='t')
+        {
+            int l,b,h;
+            printf("enter the length ,widht ,height for triangle");
+            scanf("%d %d %d",&l,&b,&h);
+            printf("the volume of triangle is %d",l*b*h/2);
+        }
+        if(chh=='r')
+        {
+            int l,b,h;
+            printf("enter the lenght ,width,and height for rectangle ");
+            scanf("%d %d %d",&l,&b,&h);
+            printf("the volume of rectangle is %d ",l*b*h);
+        }
+        if(chh=='s')
+        {
+            int l;
+            printf("enter the lenght for the square");
+            scanf("%d",&l);
+            printf("the volume of square id %d",l*l*l);
+        }
+    }
+}
