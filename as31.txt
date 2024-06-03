@@ -361,3 +361,5 @@ int main()
     else
     printf("\ninvalid");
 }
+
+github link:-    https://github.com/mohansainims/assignment
