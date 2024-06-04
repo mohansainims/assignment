@@ -17,3 +17,375 @@ int main()
 }
 
 
+========================================
+
+//print 100 to 1 odd number
+
+#include<stdio.h>
+int main()
+{
+    int n=100;
+    while(n>=1)
+    {
+        if(n%2!=0)
+        printf("%d ",n);
+        n--;
+    }
+    
+    return 0;
+}
+
+
+=================================================
+
+//print the addtion of 1 to 100
+
+#include<stdio.h>
+int main()
+{
+    int n=1,sum=0;
+    while(n<=100)
+    {
+        sum=sum+n;
+        n++;
+    }
+    printf("the sum of 1 to 100 is  %d",sum);
+    return 0;
+}
+
+
+================================================
+
+// print the reverse the number for example 1234=4321
+
+#include<stdio.h>
+int main()
+{
+    int n,rev,tem,rem,sum=0;
+    printf("enter the number which you want to reverse  ");
+    scanf("%d",&n);
+    tem=n;
+    while(tem>0)
+    {
+        rem=tem%10;
+        sum=sum*10+rem;
+        tem=tem/10;
+    }
+    printf("\n the enter number is  %d",n);
+    printf("\n the reverse number is   %d",sum);
+    return 0;
+}
+
+
+=====================================================
+
+// check the number is palindrome or not
+
+#include<stdio.h>
+int main()
+{
+    int n,rev,tem,sum=0;
+    printf("enter the number for check palindrome  ");
+    scanf("%d",&n);
+    tem=n;
+    while(tem>0)
+    {
+        rev=tem%10;
+        sum=sum*10+rev;
+        tem=tem/10;
+        
+    }
+    if(n==sum)
+    {
+        printf(" %d the number is palindrome ",n);
+        
+    }
+    else
+    printf(" %d the number is not palindrome ",n);
+    return 0;
+}
+
+==================================================
+
+// print the number is Armstrong or not
+
+#include<stdio.h>
+int main()
+{   int n,sum=0,rem,tem;
+    printf("enter the number for check the number is armstrong or not ");
+    scanf("%d",&n);
+    tem=n;
+    while(tem>0)
+    {
+        rem=tem%10;
+        sum=sum+rem*rem*rem;
+        tem=tem/10;
+        
+    }
+    if(n==sum)
+    {
+        printf(" %d the number is Armstrong ",n);
+        
+    }
+    else
+    printf(" %d the number is not Armstrong ",n);
+    return 0;
+    
+}
+
+==============================================
+
+// check the number Neon number or not for example 9 is a neon number (9->9*9=81->8+1=9))
+
+#include<stdio.h>
+int main()
+{
+    int n,sum=0,rem,tem;
+    printf("enter the number for check the number is Neon or not  ");
+    scanf("%d",&n);
+    
+    if(n>3)
+    {
+        int s=n*n;
+        tem=s;
+        while(tem>0)
+        {
+            rem=tem%10;
+            sum=sum+rem;
+            tem=tem/10;
+        }
+        if(n==sum)
+        printf(" %d the number is Neon ",n);
+        else
+        printf(" %d the number is not Neon ",n);
+        
+    }
+    else
+    printf("please enter the number grether then 3 ");
+    return 0;
+}
+
+==================================================
+
+
+// print for r :number reverse 
+
+//p :palindrome 
+
+//a :Armstrong 
+ 
+//n :neon 
+
+
+
+#include<stdio.h>
+int main()
+{
+    char ch;
+    printf("enter the character r for 'reverse number' and p for 'palindrome number' and a for 'armstrong number' and n for 'Neon number'");
+    scanf("%c",&ch);
+    if(ch=='p')
+    {
+       int n,rev,tem,sum=0;
+    printf("enter the number for check palindrome  ");
+    scanf("%d",&n);
+    tem=n;
+    while(tem>0)
+    {
+        rev=tem%10;
+        sum=sum*10+rev;
+        tem=tem/10;
+        
+    }
+    if(n==sum)
+    {
+        printf(" %d the number is palindrome ",n);
+        
+    }
+    else
+    printf(" %d the number is not palindrome ",n); 
+    }
+    if(ch=='r')
+    {
+    int n,rev,tem,rem,sum=0;
+    printf("enter the number which you want to reverse  ");
+    scanf("%d",&n);
+    tem=n;
+    while(tem>0)
+    {
+        rem=tem%10;
+        sum=sum*10+rem;
+        tem=tem/10;
+    }
+    printf("\n the enter number is  %d",n);
+    printf("\n the reverse number is   %d",sum);
+    }
+    
+    if(ch=='a')
+    {
+        int n,sum=0,rem,tem;
+    printf("enter the number for check the number is armstrong or not ");
+    scanf("%d",&n);
+    tem=n;
+    while(tem>0)
+    {
+        rem=tem%10;
+        sum=sum+rem*rem*rem;
+        tem=tem/10;
+        
+    }
+    if(n==sum)
+    {
+        printf(" %d the number is Armstrong ",n);
+        
+    }
+    else
+    printf(" %d the number is not Armstrong ",n);
+    }
+    
+    if(ch=='n')
+    {
+    int n,sum=0,rem,tem;
+    printf("enter the number for check the number is Neon or not  ");
+    scanf("%d",&n);
+    
+    if(n>3)
+    {
+        int s=n*n;
+        tem=s;
+        while(tem>0)
+        {
+            rem=tem%10;
+            sum=sum+rem;
+            tem=tem/10;
+        }
+        if(n==sum)
+        printf(" %d the number is Neon ",n);
+        else
+        printf(" %d the number is not Neon ",n);
+        
+    }
+    else
+    printf("please enter the number grether then 3 ");
+    }
+    return 0;
+}
+
+
+===================================================
+
+
+print for // print for e :
+	//f:45-->67 even number print 
+	//b:56--->34 even number print 
+	//s:23-->78 even number ka sum 
+
+//o :
+	//f:45-->67 odd number print 
+	//b:56--->34 odd number print 
+	//s:23-->78 odd number ka sum 
+	
+	
+#include<stdio.h>
+int main()
+{
+    char ch;
+    printf("enter the character e for even number and o for odd number  ");
+    scanf("%c",&ch);
+    if(ch=='e')
+    {
+        char chh;
+        printf("enter the character f ,b,s for even number print");
+        scanf(" %c",&chh);
+        if(chh=='f')
+        {
+            //45-->67 even number print 
+            int n=45;
+            while(n<=67)
+            {
+                if(n%2==0)
+                printf("%d ",n);
+                n++;
+            }
+            
+        }
+        else if(chh=='b')
+        {
+           	//b:56--->34 even number print 
+           	int n=56;
+           	while(n>=34)
+           	{
+           	    if(n%2==0)
+           	    printf("%d ",n);
+           	    n--;
+           	}
+ 
+        }
+        else if(chh=='s')
+        {
+        	//s:23-->78 even number ka sum 
+            int n=23,sum=0;
+            while(n<=78)
+            {
+                if(n%2==0)
+                sum=sum+n;
+                n++;
+            }
+            printf("sum of even number from 23 to 78 is   %d",sum);
+        }
+        else
+        printf("invalie input");
+    }
+    else if(ch=='o')
+    {
+        char chhh;
+        printf("enter the character f ,b,s for even number print");
+        scanf(" %c",&chhh);
+        if(chhh =='f')
+        {
+            	//f:45-->67 odd number print 
+            int n=45;
+            while(n<=67)
+            {
+                if(n%2!=0)
+                printf("%d ",n);
+                n++;
+            }
+        }
+        else if(chhh=='b')
+        {
+            	//b:56--->34 odd number print 
+            int n=56;
+            while(n>=34)
+            {
+                if(n%2!=0)
+                {
+                    printf("%d ",n);
+                }
+                n--;
+            }
+            
+        }
+        else if(chhh=='s')
+        {
+            	//s:23-->78 odd number ka sum 
+            int n=23;
+            int sum=0;
+            while(n<=78)
+            {
+                if(n%2!=0)
+                {   printf("%d ",n);
+                    sum=sum+n;
+                }
+                n++;
+            }
+            printf("\n sum of odd number from 23 to 78 is   %d",sum);
+        }
+        else
+        printf("invalid input");
+    }
+    else
+    printf("invalid input");
+    return 0;
+}
+
